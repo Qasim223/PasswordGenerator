@@ -2,7 +2,7 @@
 
     Private Sub BtnGenerate_Click(sender As System.Object, e As System.EventArgs) Handles BtnGenerate.Click
 
-        Dim sr As New System.IO.StreamReader("Z:\Kasim\Development\Password Generator\Dictionary.txt")
+        Dim sr As New System.IO.StreamReader("C:\Users\Kasim\source\Dev\PasswordGenerator\Dictionary.txt")
 
         Dim iMaxlines As Integer = 0
         Dim curline As Integer = 0
@@ -29,7 +29,7 @@
             Randomize()
             Ran = Rnd() * iMaxlines
 
-            Dim sr2 As New System.IO.StreamReader("Z:\Kasim\Development\Password Generator\Dictionary.txt")
+            Dim sr2 As New System.IO.StreamReader("C:\Users\Kasim\source\Dev\PasswordGenerator\Dictionary.txt")
             curline = 0
             Do Until curline >= Ran
                 sWord = sr2.ReadLine()
